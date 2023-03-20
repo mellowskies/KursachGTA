@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="Kursach.MVVM.View.TruthView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kursach.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel Margin="10,0,0,0">
+        <TextBlock Text="Правда"
+                   Foreground="White"
+                   FontWeight="Bold"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="16,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <StackPanel>
+                <Border Width="150"
+                        Margin="0"
+                        Height="150">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,150,150"/>
+                    </Border.Clip>
+                    <Grid>
+                        <Image Width="150"
+                               Height="150"
+                               Stretch="UniformToFill"
+                               Source="/Resources/TheTruth-GTASA.jpg"/>
+                        <StackPanel>
+
+                        </StackPanel>
+                    </Grid>
+                </Border>
+                <TextBlock Text="Портрет персонажа"
+                                   Foreground="White"
+                                   FontWeight="Light"
+                                   FontSize="18"/>
+            </StackPanel>
+            <StackPanel>
+                <Border Width="150"
+                    Height="150">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,150,150"/>
+                    </Border.Clip>
+                    <Grid>
+                        <Image Width="150"
+                                   Height="150"
+                                   Stretch="UniformToFill"
+                               Opacity=".7"
+                                Source="/Resources/Peter-Fonda.jpg"/>
+                        <StackPanel>
+                            <TextBlock Text="Питер&#x0a;Фонда"
+                                   Foreground="White"
+                                   FontSize="22"
+                                   FontWeight="Bold"
+                                   Opacity=".5"
+                                   Margin="10,90,10,0"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+                <TextBlock Text="Актёр озвучивания"
+                           Foreground="White"
+                           FontWeight="Light"
+                           FontSize="18"
+                           Margin="20,0,10,0"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="О персонаже"
+                   Foreground="White"
+                   FontSize="28"
+                   FontWeight="Medium"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,10"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <TextBlock
+                    Text="Правда — пожилой хиппи, который живет в Сан-Фиерро и владеет фермой на окраине города. Он становится другом, когда Карл крадет комбайн у сурвивалистов и сжигает коноплю на ферме. Также знакомит Карла с Дуэйном, Джетро и Зеро, а позже с Кентом Полом и Маккером. Также Карл крадет для него реактивный ранец из Зоны 69 и контейнер неизвестной «инопланетной жидкостью». Позже он выразил свое восхищение Карлом, который по его словам «победил систему»."
+                   Foreground="White"
+                   Height="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, Path=ActualHeight}"
+                   Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, Path=ActualWidth}"
+                   FontWeight="Light"
+                   TextWrapping="Wrap"
+                   FontSize="16"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="Kursach.MVVM.View.GroveView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kursach.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderBrush="White"
+            BorderThickness="1">
+        <StackPanel
+            Margin="10,0,0,0">
+            <TextBlock Text="Grove Street Families"
+                   Foreground="White"
+                   FontWeight="Bold"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+            <StackPanel>
+                <TextBlock Text="Grove Street Families (GSF; Семьи с Гроув-стрит) — афроамериканская уличная банда из Лос-Сантоса, являющаяся группировкой-протагонистом в игре, поскольку Карл &quot;Си-Джей&quot; Джонсон, главный герой, является уважаемым членом банды и братом её лидера, Шона &quot;Свита&quot; Джонсона. Раньше (за несколько лет до событий игры) Grove Street Families была не просто бандой, а альянсом из трёх сэтов (подгруппировок). Такое название альянс получил, поскольку сформировался на улице Гроув-стрит. Известно, что с 1987 до 1992 года (учитывая незнание Си-Джея о произошедшем расколе при прилёте в Лос-Сантос) в альянсе произошёл раскол, и сэты Temple Drive Families и Seville Boulevard Families отделились от альянса. После этого Grove Street Families перестала быть альянсом банд и стала просто бандой."
+                   Foreground="White"
+                   FontWeight="Light"
+                   TextWrapping="Wrap"
+                   FontSize="18"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+                <Border Width="250"
+                    Height="150"
+                    Margin="45,0,0,0">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,250,150"/>
+                    </Border.Clip>
+                    <Grid>
+                        <Image Width="250"
+                           Height="150"
+                           Stretch="UniformToFill"
+                           Source="/Resources/Grove.jpg"/>
+                    </Grid>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>

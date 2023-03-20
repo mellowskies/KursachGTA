@@ -1,0 +1,179 @@
+﻿<UserControl x:Class="Kursach.MVVM.View.OysterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kursach.MVVM.View"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel Margin="10,0,0,0">
+        <TextBlock Text="Устрицы"
+                   Foreground="White"
+                   FontWeight="Bold"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+        <StackPanel Orientation="Horizontal">
+            <Border Width="400"
+                    Height="200">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#799fcb" Offset="0.0"/>
+                        <GradientStop Color="#95b4cc" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
+                </Border.Clip>
+                <Grid>
+
+                    <Image Width="250"
+                           Height="250"
+                           Opacity=".5"
+                           Source="/Resources/OysterGTASA.png" Margin="181,1,-31,-51" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-6.812"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    <StackPanel>
+                        <TextBlock Text="Собери 50 устриц&#x0a;и прокачай лёгкие!"
+                                   Foreground="White"
+                                   FontSize="28"
+                                   FontWeight="Bold"
+                                   Margin="20,10,10,0"/>
+                        <TextBlock Text="Бесконечно дышать&#x0a;под водой&#x0a;Что может быть лучше?"
+                                   Foreground="White"
+                                   FontWeight="Medium"
+                                   Opacity=".75"
+                                   FontSize="18"
+                                   Margin="20,10,10,0"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Border Width="200"
+                    Height="200"
+                    Margin="45,0,0,0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#afc7d0" Offset="0.0"/>
+                        <GradientStop Color="#95b4cc" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,200,200"/>
+                </Border.Clip>
+                <Grid MouseDown="Grid_MouseDown"
+                      Cursor="Hand">
+                    <Image Width="200"
+                           Height="200"
+                           Opacity=".5"
+                           Stretch="UniformToFill"
+                           Source="/Resources/DocksGTASA.png"/>
+                    <StackPanel>
+                        <TextBlock Text="Нажми"
+                                   Foreground="White"
+                                   FontSize="28"
+                                   FontWeight="Bold"
+                                   Margin="20,120,10,0"/>
+                        <TextBlock Text="Чтобы открыть карту"
+                                   Foreground="White"
+                                   FontWeight="Light"
+                                   FontSize="18"
+                                   Margin="20,0,10,0"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="8,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="Награды"
+                   Foreground="White"
+                   FontSize="28"
+                   FontWeight="Medium"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,10"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Border Width="125"
+                        Height="125"
+                        Margin="0">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#CD3160" Offset="0.0"/>
+                            <GradientStop Color="#BD5391" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,125,125"/>
+                    </Border.Clip>
+                    <Grid>
+                        <TextBlock Text="100%&#x0a;Привлека-&#x0a;тельность"
+                                   TextAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                   FontSize="22"
+                                   Foreground="White"/>
+                    </Grid>
+                </Border>
+                <Border Width="125"
+                        Height="125">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#F9708C" Offset="0.0"/>
+                            <GradientStop Color="#FFCE75" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,125,125"/>
+                    </Border.Clip>
+                    <Grid>
+                        <TextBlock Text="100%&#x0a;Объём&#x0a;лёгких"
+                                   TextAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                   FontSize="22"
+                                   Foreground="White"/>
+                    </Grid>
+                </Border>
+                <Border Width="125"
+                        Height="125">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#4fc879" Offset="0.0"/>
+                            <GradientStop Color="#3aab58" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,125,125"/>
+                    </Border.Clip>
+                    <Grid>
+                        <TextBlock Text="100.000$"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                   FontSize="28"
+                                   Foreground="White"/>
+                    </Grid>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

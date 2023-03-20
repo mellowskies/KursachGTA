@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Kursach.MVVM.View.Act2View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kursach.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderBrush="White"
+            BorderThickness="1">
+        <StackPanel
+            Margin="10,0,0,0">
+            <TextBlock Text="Начало больших дел"
+                   Foreground="White"
+                   FontWeight="Bold"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+            <StackPanel>
+                <TextBlock Text="Постепенно Карл приобретает новых союзников и друзей, среди которых лидер китайской группировки и бизнесмен Ву Зи Му; на первый взгляд равнодушный ко всему, однако отлично осведомлённый о секретах правительства хиппи по прозвищу «Правда» (англ. The Truth), и Цезарь, бывший член латиноамериканской банды, который, как и Карл, был предан старыми друзьями. Карл вместе с Цезарем, Кендл (сестрой Карла и девушкой Цезаря), а также техниками — приятелями Правды, открывают магазин по тюнингу автомобилей в Сан-Фиерро, быстро набирающий популярность. После убийства Райдера Карл попадает под влияние правительственного агента Майка Торено, работающего под прикрытием, который утверждает, что может освободить Свита. По указанию Торено Карл избегает посещения Лос-Сантоса, вместо этого продолжая работать с Ву Зи Му над повышением известности и влияния нового казино в поделённом между мафиозными семьями Лас-Вентурасе. Карл также возвращает Мэдд Дога (обезумевшего рэпера, чью карьеру Карл неумышленно разрушил) на вершину звёздного пьедестала, помогая рэперу в роли менеджера. Карл наслаждается своей новой жизнью, но неожиданно узнаёт, что Свита освобождают, из-за чего немедленно возвращается в Лос-Сантос. К его удивлению, Свит осуждает Карла за полное забвение родного города и старых друзей."
+                   Foreground="White"
+                   Height="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, Path=ActualHeight}"
+                   FontWeight="Light"
+                   TextWrapping="Wrap"
+                   FontSize="18"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>

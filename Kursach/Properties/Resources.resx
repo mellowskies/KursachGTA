@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AldeaMalvada_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AldeaMalvada-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ballas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ballas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barbara_Schternvart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barbara Schternvart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="basketball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\basketball.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bayside_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bayside-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="betting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\betting.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BigSmoke_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BigSmoke-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="billiard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\billiard.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blackjack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blackjack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Camera_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Camera-GTASA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CJ_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CJ-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clifton_Collins_Jr_2013__cropped_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clifton_Collins_Jr_2013_(cropped).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clifton_Powell__cropped_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clifton_Powell_(cropped).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CombatSG_GTASA_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CombatSG-GTASA-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CSR103_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CSR103.9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dance.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeniseRobinson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeniseRobinson.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dillimore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dillimore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DocksGTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DocksGTASA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Duality" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Duality.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElQuebrados_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElQuebrados-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Faizon_Love" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Faizon-Love.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Flint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrontyardTag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrontyardTag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GameplayTabBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameplayTabBg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Go_Go_Space_Monkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Go Go Space Monkey.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="graffiti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\graffiti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grenade_GTASA_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grenade-GTASA-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grove.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gtasaico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gtasaico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GTA_SanAndreas_Artwork_TheTruth_2_7591_1600" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GTA_SanAndreas_Artwork_TheTruth_2-7591-1600.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GTA_SA_Master_Sounds_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GTA_SA_Master_Sounds_Logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gta_sa_san_mod_las_venturas_welcome_sign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gta-sa-san-mod-las-venturas-welcome-sign.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Helena_Wankstein" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Helena Wankstein.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HorseshoeGTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HorseshoeGTASA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="horseshoesmap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\horseshoesmap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImageBounceFM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImageBounceFM.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JamesWoods" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JamesWoods.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Katie_Zhan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Katie Zhan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KilotrayTag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KilotrayTag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kjahwest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kjahwest.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_DST" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K-DST.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K_Rose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\K-Rose.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LasBarrancas_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LasBarrancas-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LasVenturas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LasVenturas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lets_Get_Ready_to_Bumble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lets Get Ready to Bumble.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LosSantosSunrise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LosSantosSunrise.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LosSantosVagos_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LosSantosVagos-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="M4_GTASA_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\M4-GTASA-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Michelle_Cannes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Michelle Cannes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Micro_Uzi_GTASA_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Micro-Uzi-GTASA-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MikeToreno_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MikeToreno-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Millie_Perkins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Millie Perkins.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Montgomery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Montgomery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motorcycle_png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\motorcycle-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MP5_GTASA_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MP5-GTASA-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OysterGTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OysterGTASA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oystermap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oystermap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Palomino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Palomino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peter_Fonda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peter-Fonda.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Playback_FM_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Playback_FM-0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PumpSG_GTASA_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PumpSG-GTASA-Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radioBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\radioBg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RadioX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RadioX.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Radio_Los_Santos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Radio_Los_Santos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedCounty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedCounty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoteExplosive_GTASA_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemoteExplosive-GTASA-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="roulette" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roulette.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ryder_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ryder-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SamuelLJackson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SamuelLJackson.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SanAndreas_TerrainMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SanAndreas-TerrainMap.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="San_Fierro_Overview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\San_Fierro_Overview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SeanJohnson_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeanJohnson-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Seville_Tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seville_Tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SF_UR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SF-UR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slot_machine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slot-machine.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snapshotsmap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snapshotsmap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SniperRifle_GTASA_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SniperRifle-GTASA-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StoryBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StoryBg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StuntJumpsGTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StuntJumpsGTASA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tagsmap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tagsmap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TempleballaTag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TempleballaTag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TheTruth_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TheTruth-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="They_Crawled_from_Uranus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\They Crawled from Uranus.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TierraRobada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TierraRobada.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TransportTabBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TransportTabBg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="uniquejumpsmap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\uniquejumpsmap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VagosTag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VagosTag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ValleOcultado_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ValleOcultado-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VarriosLosAztecas_GTASA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VarriosLosAztecas-GTASA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Varrios_Los_Aztecas_Tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Varrios_Los_Aztecas_Tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wheel_of_fortune" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wheel-of-fortune.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Woozie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Woozie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YoungMaylay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YoungMaylay.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_ .jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_0944853" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0944853.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_14545012825322_image_63411" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\14545012825322_image_63411.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_2020_MC_Eiht" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2020_MC_Eiht.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\4.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\5.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_81510_1321892517_gallery16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\81510-1321892517-gallery16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_9771_Cesar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9771_Cesar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

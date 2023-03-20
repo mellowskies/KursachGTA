@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Kursach.MVVM.View.Act3View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kursach.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderBrush="White"
+            BorderThickness="1">
+        <StackPanel
+            Margin="10,0,0,0">
+            <TextBlock Text="Возвращение домой"
+                   Foreground="White"
+                   FontWeight="Bold"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+            <StackPanel>
+                <TextBlock Text="Тенпенни, которого судили за взяточничество и ряд других преступлений, был оправдан, что вызвало у жителей Лос-Сантоса массовое негодование и повлекло за собой настоящий бунт в городе (основанный на реальных событиях в Лос-Анджелесе в 1992 году). Воодушевлённый Свитом Карл хочет отомстить Тенпенни и разрушить его бизнес, для чего он отвоёвывает потерянную территорию у других банд и уничтожает наркодилеров, которые распространяли отраву на Grove Street. Затем Карл пробирается в логово предателя Смоука, теперь крупнейшего наркобарона в городе, и убивает его. Эти события вынуждают Тенпенни покинуть Лос-Сантос, однако он не успевает этого сделать. Свит и Карл преследуют Тенпенни по улицам Лос-Сантоса, и в ходе погони офицер теряет управление и, сбивая ограждение моста, падает вместе с автомобилем. Вскоре после аварии Тенпенни умирает от полученных травм. В последней сцене семья Джонсонов воссоединяется и Карл выходит из дверей со словами: «Пройдусь по району, посмотрю, что происходит» (англ. «Fittin' to hit the block, see what’s happening»)."
+                   Foreground="White"
+                   Height="{Binding RelativeSource={RelativeSource 
+                    AncestorType={x:Type UserControl}}, 
+                    Path=ActualHeight}"
+                   FontWeight="Light"
+                   TextWrapping="Wrap"
+                   FontSize="20"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>

@@ -1,0 +1,128 @@
+﻿<UserControl x:Class="Kursach.MVVM.View.ArcadeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kursach.MVVM.View"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel Margin="10,0,0,0">
+        <TextBlock Text="Аркадные игры"
+                   Foreground="White"
+                   FontWeight="Bold"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="16,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <StackPanel>
+                <Border Width="300"
+                        Margin="0"
+                        Height="150">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,300,150"/>
+                    </Border.Clip>
+                    <Grid>
+
+                        <MediaElement Width="300"
+                               Height="150"
+                               Stretch="UniformToFill"
+                               Volume="0"
+                               MediaEnded="MediaElement_MediaEnded"
+                               Source="Duality.mp4"/>
+
+                    </Grid>
+                </Border>
+                <TextBlock Text="Duality"
+                           Foreground="White"
+                           HorizontalAlignment="Center"
+                           FontWeight="Light"
+                           FontSize="18"/>
+            </StackPanel>
+            <StackPanel>
+                <Border Width="300"
+                        Height="150">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,300,150"/>
+                    </Border.Clip>
+                    <Grid>
+                        <MediaElement Width="300"
+                               Height="150"
+                               Stretch="UniformToFill"
+                                      Volume="0"
+                                      MediaEnded="MediaElement_MediaEnded"
+                               Source="Go Go Space Monkey.mp4"/>
+                    </Grid>
+                </Border>
+                <TextBlock Text="Go Go Space Monkey"
+                           Foreground="White"
+                           FontWeight="Light"
+                           HorizontalAlignment="Center"
+                           FontSize="18"/>
+            </StackPanel>
+            
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="16,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <StackPanel>
+                <Border Width="300"
+                        Margin="0"
+                        Height="150">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,300,150"/>
+                    </Border.Clip>
+                    <Grid>
+                        <MediaElement Width="300"
+                               Height="150"
+                               Volume="0"
+                               Stretch="UniformToFill"
+                                      MediaEnded="MediaElement_MediaEnded"
+                               Source="Lets Get Ready to Bumble.mp4"/>
+                    </Grid>
+                </Border>
+                <TextBlock Text="Lets Get Ready to Bumble"
+                           Foreground="White"
+                           FontWeight="Light"
+                           HorizontalAlignment="Center"
+                           FontSize="18"/>
+            </StackPanel>
+            <StackPanel>
+                <Border Width="300"
+                        Height="150">
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,300,150"/>
+                    </Border.Clip>
+                    <Grid>
+                        <MediaElement Width="300"
+                               Height="150"
+                               Stretch="UniformToFill"
+                               Volume="0"
+                                      MediaEnded="MediaElement_MediaEnded"
+                               Source="They Crawled from Uranus.mp4"/>
+                    </Grid>
+                </Border>
+                <TextBlock Text="They Crawled from Uranus"
+                           Foreground="White"
+                           FontWeight="Light"
+                           HorizontalAlignment="Center"
+                           FontSize="18"/>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

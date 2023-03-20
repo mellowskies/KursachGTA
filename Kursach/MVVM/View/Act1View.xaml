@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Kursach.MVVM.View.Act1View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kursach.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderBrush="White"
+            BorderThickness="1">
+        <StackPanel
+            Margin="10,0,0,0">
+            <TextBlock Text="Прибытие в Los Santos"
+                   Foreground="White"
+                   FontWeight="Bold"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+            <StackPanel>
+                <TextBlock Text="   Узнав о смерти своей матери, Карл Джонсон (Carl Johnson или CJ) возвращается из Либерти-Сити в родной Лос-Сантос. Помогая восстанавливать былую силу и славу банды, он узнаёт от Цезаря Виальпандо, что его лучшие друзья, Биг Смоук и Райдер, работают на коррумпированного офицера C.R.A.S.H. Тенпенни и вражескую группировку «Баллас». Смоук и Райдер помогают «Баллас» устроить засаду на брата Карла, Свита, которого арестовывает и отправляет в тюрьму Тенпенни. Тенпенни также хватает Карла и увозит его из города. Си-Джей, понимая, что продажный офицер — единственная надежда Свита выйти из тюрьмы, продолжает выполнять задания Тенпенни."
+                   Foreground="White"
+                   Height="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}, Path=ActualHeight}"
+                   FontWeight="Light"
+                   TextWrapping="Wrap"
+                   FontSize="24"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>

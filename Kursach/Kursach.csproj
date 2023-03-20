@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDD52731-41D5-4795-B9A4-7088738132B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kursach</RootNamespace>
+    <AssemblyName>Kursach</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gtasaico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ActsReader.xaml.cs">
+      <DependentUpon>ActsReader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BigMapWindow.xaml.cs">
+      <DependentUpon>BigMapWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Characters.xaml.cs">
+      <DependentUpon>Characters.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CollectablesMaps.xaml.cs">
+      <DependentUpon>CollectablesMaps.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\ObserableObject.cs" />
+    <Compile Include="Core\RelayCommand.cs" />
+    <Compile Include="DatesView.xaml.cs">
+      <DependentUpon>DatesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FactionsView.xaml.cs">
+      <DependentUpon>FactionsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameplayTab.xaml.cs">
+      <DependentUpon>GameplayTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocationView.xaml.cs">
+      <DependentUpon>LocationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MiniGamesView.xaml.cs">
+      <DependentUpon>MiniGamesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MissionsView.xaml.cs">
+      <DependentUpon>MissionsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MusicPlayer.xaml.cs">
+      <DependentUpon>MusicPlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\ViewModel\Act1ViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\Act2ViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\Act3ViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\ActsReaderViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\ArcadeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\AztecasViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\BadDateViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\BallasViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\BigSmokeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\CesarViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\CharacterViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\CJViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\CollectablesViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\DatesViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\DateTypeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\FactionsViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\GamblingVIewModel.cs" />
+    <Compile Include="MVVM\ViewModel\GirlfriendsViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\GoodDateViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\GraffitiViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\GroveViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\HorseshoesViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\MiniGamesViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\MissionListViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\MissionsHowToPlayViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\MissionsViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\ObservableObject.cs" />
+    <Compile Include="MVVM\ViewModel\OysterViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\RedirectToHomeViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\RyderViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\SnapshotsViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\SportsViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\SweetViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\TempennyViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\TorenoViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\TruthViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\UniqueJumpsViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\VagosViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\WuZiMuViewModel.cs" />
+    <Compile Include="MVVM\View\Act1View.xaml.cs">
+      <DependentUpon>Act1View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\Act2View.xaml.cs">
+      <DependentUpon>Act2View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\Act3View.xaml.cs">
+      <DependentUpon>Act3View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\ArcadeView.xaml.cs">
+      <DependentUpon>ArcadeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\AztecasView.xaml.cs">
+      <DependentUpon>AztecasView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\BadDateView.xaml.cs">
+      <DependentUpon>BadDateView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\BallasView.xaml.cs">
+      <DependentUpon>BallasView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\BigSmokeView.xaml.cs">
+      <DependentUpon>BigSmokeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\CesarView.xaml.cs">
+      <DependentUpon>CesarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\CJView.xaml.cs">
+      <DependentUpon>CJView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\DateTypeView.xaml.cs">
+      <DependentUpon>DateTypeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\GamblingView.xaml.cs">
+      <DependentUpon>GamblingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\GirlfriendsView.xaml.cs">
+      <DependentUpon>GirlfriendsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\GoodDateView.xaml.cs">
+      <DependentUpon>GoodDateView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\GraffitiView.xaml.cs">
+      <DependentUpon>GraffitiView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\GroveView.xaml.cs">
+      <DependentUpon>GroveView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\HorseshoesView.xaml.cs">
+      <DependentUpon>HorseshoesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\MissionListView.xaml.cs">
+      <DependentUpon>MissionListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\MissionsHowToPlayView.xaml.cs">
+      <DependentUpon>MissionsHowToPlayView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\OysterView.xaml.cs">
+      <DependentUpon>OysterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\RedirectToHomeView.xaml.cs">
+      <DependentUpon>RedirectToHomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\RyderView.xaml.cs">
+      <DependentUpon>RyderView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\SnapshotsView.xaml.cs">
+      <DependentUpon>SnapshotsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\SportsView.xaml.cs">
+      <DependentUpon>SportsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\SweetView.xaml.cs">
+      <DependentUpon>SweetView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\TempennyView.xaml.cs">
+      <DependentUpon>TempennyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\TorenoView.xaml.cs">
+      <DependentUpon>TorenoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\TruthView.xaml.cs">
+      <DependentUpon>TruthView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\UniqueJumpsView.xaml.cs">
+      <DependentUpon>UniqueJumpsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\VagosView.xaml.cs">
+      <DependentUpon>VagosView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\WuZiMuView.xaml.cs">
+      <DependentUpon>WuZiMuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RadioTab.xaml.cs">
+      <DependentUpon>RadioTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StatsView.xaml.cs">
+      <DependentUpon>StatsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StoryTab.xaml.cs">
+      <DependentUpon>StoryTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Theme\CollectablesButtonsThemeClass.cs" />
+    <Page Include="ActsReader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BigMapWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Characters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CollectablesMaps.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DatesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FactionsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameplayTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LocationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MiniGamesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MissionsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MusicPlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\Act1View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\Act2View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\Act3View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\ArcadeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\AztecasView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\BadDateView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\BallasView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\BigSmokeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\CesarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\CJView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\DateTypeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\GamblingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\GirlfriendsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\GoodDateView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\GraffitiView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\GroveView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\HorseshoesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\MissionListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\MissionsHowToPlayView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\OysterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\RedirectToHomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\RyderView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\SnapshotsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\SportsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\SweetView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\TempennyView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\TorenoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\TruthView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\UniqueJumpsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\VagosView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVVM\View\WuZiMuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RadioTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StatsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StoryTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Theme\CollectablesButtonsTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\GTA_SanAndreas_Artwork_TheTruth_2-7591-1600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\radioBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Radio_Los_Santos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\RadioX.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\K-Rose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SF-UR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\GTA_SA_Master_Sounds_Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ImageBounceFM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Kjahwest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CSR103.9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\K-DST.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Playback_FM-0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\StoryBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\GameplayTabBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\TransportTabBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MVVM\Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\graffiti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SanAndreas-TerrainMap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Seville_Tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\KilotrayTag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\VagosTag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FrontyardTag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\TempleballaTag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Varrios_Los_Aztecas_Tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\HorseshoeGTASA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\gta-sa-san-mod-las-venturas-welcome-sign.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\M4-GTASA-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CombatSG-GTASA-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\RemoteExplosive-GTASA-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\MP5-GTASA-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\OysterGTASA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DocksGTASA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\StuntJumpsGTASA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\motorcycle-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Camera-GTASA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\San_Fierro_Overview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LosSantosSunrise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SniperRifle-GTASA-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Micro-Uzi-GTASA-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PumpSG-GTASA-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Grenade-GTASA-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CJ-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\YoungMaylay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Faizon-Love.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SeanJohnson-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Woozie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\TheTruth-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\MikeToreno-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Ryder-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\9771_Cesar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\_ .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Clifton_Powell_%28cropped%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\BigSmoke-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\2020_MC_Eiht.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SamuelLJackson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Clifton_Collins_Jr_2013_%28cropped%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Peter-Fonda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\0944853.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\JamesWoods.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Grove.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ballas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LosSantosVagos-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\VarriosLosAztecas-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Flint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Montgomery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Palomino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\RedCounty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Dillimore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LasVenturas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ValleOcultado-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AldeaMalvada-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ElQuebrados-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Bayside-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LasBarrancas-GTASA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\TierraRobada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Barbara Schternvart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Michelle Cannes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Katie Zhan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Helena Wankstein.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Millie Perkins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DeniseRobinson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\2.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\3.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\1.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\4.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\5.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Duality.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Go Go Space Monkey.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Lets Get Ready to Bumble.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\They Crawled from Uranus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\wheel-of-fortune.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\slot-machine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\roulette.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\blackjack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\betting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\basketball.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\billiard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\dance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\81510-1321892517-gallery16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\14545012825322_image_63411.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\snapshotsmap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\tagsmap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\uniquejumpsmap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\horseshoesmap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\oystermap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\gtasaico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="gtasaico.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
